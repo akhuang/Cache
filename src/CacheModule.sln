@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheModule", "CacheModule\CacheModule.csproj", "{D3009119-780F-4372-8C88-B2E9D39EA173}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zing.Core", "..\Zing.Core\Zing.Core.csproj", "{ED5AF97D-6E68-4206-A71D-558C6F9DC92A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{AC3BF58D-465F-4480-B6A9-5C2ABC8A2CF0}"
 EndProject
@@ -15,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{18F884
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zing.Core", "Zing.Core\Zing.Core.csproj", "{ED5AF97D-6E68-4206-A71D-558C6F9DC92A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,14 +26,14 @@ Global
 		{D3009119-780F-4372-8C88-B2E9D39EA173}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3009119-780F-4372-8C88-B2E9D39EA173}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3009119-780F-4372-8C88-B2E9D39EA173}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ED5AF97D-6E68-4206-A71D-558C6F9DC92A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ED5AF97D-6E68-4206-A71D-558C6F9DC92A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ED5AF97D-6E68-4206-A71D-558C6F9DC92A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ED5AF97D-6E68-4206-A71D-558C6F9DC92A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AC3BF58D-465F-4480-B6A9-5C2ABC8A2CF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AC3BF58D-465F-4480-B6A9-5C2ABC8A2CF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC3BF58D-465F-4480-B6A9-5C2ABC8A2CF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC3BF58D-465F-4480-B6A9-5C2ABC8A2CF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED5AF97D-6E68-4206-A71D-558C6F9DC92A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED5AF97D-6E68-4206-A71D-558C6F9DC92A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED5AF97D-6E68-4206-A71D-558C6F9DC92A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED5AF97D-6E68-4206-A71D-558C6F9DC92A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

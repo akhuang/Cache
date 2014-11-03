@@ -25,6 +25,7 @@ namespace UnitTest
 
             cacheManager.Get<RegionEntity>(() =>
             {
+
                 return new RegionEntity();
             });
         }
