@@ -10,6 +10,7 @@ namespace UnitTest
     public class UnitTest1
     {
         IContainer Container;
+
         [SetUp]
         public void Setup()
         {
@@ -25,7 +26,6 @@ namespace UnitTest
 
             cacheManager.Get<RegionEntity>(() =>
             {
-
                 return new RegionEntity();
             });
         }
