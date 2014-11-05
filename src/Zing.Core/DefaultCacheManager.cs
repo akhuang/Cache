@@ -17,7 +17,9 @@ namespace Zing.Core
 
         public T Get<T>(Func<T> func)
         {
-            
+            var model = func();
+            _entries.GetOrAdd("", model);
+            return model;
         }
     }
 }
