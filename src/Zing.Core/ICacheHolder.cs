@@ -5,8 +5,8 @@ using System.Text;
 
 namespace Zing.Core
 {
-    public interface ICacheManager
+    public interface ICacheHolder
     {
-        TResult Get<TKey, TResult>(TKey key, Func<AcquireContext<TKey>, TResult> func);
+        ICache<TKey, TResult> GetCache<TKey, TResult>(Type component);
     }
 }

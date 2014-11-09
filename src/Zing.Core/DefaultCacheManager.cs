@@ -8,18 +8,19 @@ namespace Zing.Core
 {
     public class DefaultCacheManager : ICacheManager
     {
-        private readonly ConcurrentDictionary<string, Object> _entries;
+        private readonly Type _component;
+        private readonly ICacheHolder _cacheHolder;
 
-        public DefaultCacheManager()
+        public DefaultCacheManager(Type component, ICacheHolder cacheHolder)
         {
-            _entries = new ConcurrentDictionary<string, object>();
+            _component = component;
+            _cacheHolder = cacheHolder;
         }
 
-        public TResult Get<TKey, TResult>(TKey key, Func<TResult> func)
+        public TResult Get<TKey, TResult>(TKey key, Func<AcquireContext<TKey>, TResult> acquire)
         {
-            var model = func();
-            _entries.GetOrAdd(key, model);
-            return model;
+            return _cacheHolder.GetCache<TKey, TResult>(_component).Get(key, acquire);
         }
+
     }
 }

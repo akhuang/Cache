@@ -64,8 +64,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AcquireContext.cs" />
+    <Compile Include="Cache.cs" />
     <Compile Include="CacheModule.cs" />
+    <Compile Include="DefaultCacheHolder.cs" />
     <Compile Include="DefaultCacheManager.cs" />
+    <Compile Include="ICache.cs" />
+    <Compile Include="ICacheContextAccessor.cs" />
+    <Compile Include="ICacheHolder.cs" />
     <Compile Include="ICacheManager.cs" />
     <Compile Include="ISignals.cs" />
     <Compile Include="IToken.cs" />

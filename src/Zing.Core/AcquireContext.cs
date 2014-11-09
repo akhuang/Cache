@@ -5,8 +5,26 @@ using System.Text;
 
 namespace Zing.Core
 {
-    public class AcquireContext
+    public interface IAcquireContext
     {
-
+        Action<IToken> Monitor { get; }
+    }
+    public class AcquireContext<TKey> : IAcquireContext
+    {
+        public AcquireContext(TKey key, Action<IToken> monitor)
+        {
+            Key = key;
+            Monitor = monitor;
+        }
+        public TKey Key
+        {
+            get;
+            private set;
+        }
+        public Action<IToken> Monitor
+        {
+            get;
+            private set;
+        }
     }
 }
