@@ -7,6 +7,6 @@ namespace Zing.Core
 {
     public interface ICacheManager
     {
-        T Get<T>(Func<T> func);
+        TResult Get<TKey, TResult>(TKey key, Func<TResult> func);
     }
 }

@@ -15,10 +15,10 @@ namespace Zing.Core
             _entries = new ConcurrentDictionary<string, object>();
         }
 
-        public T Get<T>(Func<T> func)
+        public TResult Get<TKey, TResult>(TKey key, Func<TResult> func)
         {
             var model = func();
-            _entries.GetOrAdd("", model);
+            _entries.GetOrAdd(key, model);
             return model;
         }
     }
